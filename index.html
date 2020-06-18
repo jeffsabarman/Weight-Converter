@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <h1>Weight Converter</h1>
+      <select name="type" id="type" onchange="getOption()">
+        <option value="kilogram">Kilogram</option>
+        <option value="gram">Gram</option>
+        <option value="miligram">Miligram</option>
+        <option value="pound">Pound</option>
+        <option value="ounce">Ounce</option>
+      </select>
+      <input id="input-num" type="number" placeholder="Enter Your Number" />
+      <span id="unit"></span>
+    </section>
+    <section class="convert">
+      <div class="convert-content">
+        <div class="kilogram">
+          <span id="kg">0</span>
+          <span>Kilogram</span>
+        </div>
+        <div class="gram">
+          <span id="g">0</span>
+          <span>Gram</span>
+        </div>
+        <div class="miligram">
+          <span id="mg">0</span>
+          <span>Miligram</span>
+        </div>
+        <div class="pound">
+          <span id="p">0</span>
+          <span>Pound</span>
+        </div>
+        <div class="ounce">
+          <span id="o">0</span>
+          <span>Ounce</span>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
